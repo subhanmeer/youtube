@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-delay: -2s;
+        animation-iteration-count: infinite;
+        animation-direction:normal;
+        animation-timing-function: linear;
+        position: relative;
+    
+    }
+
+    @keyframes example {
+        /* from{
+            background-color: red;
+        }
+        to{
+            background-color:yellow;
+        } */
+        0%{
+            background-color: red;
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            background-color: yellow;
+            top: 0px;
+            left: 200px;
+        }
+        50%{
+            background-color: green;
+            top: 200px;
+            left: 200px;
+        }
+        75%{
+            background-color: yellowgreen;
+            top: 200px;
+            left: 0px;
+        }
+        100%{
+            background-color: red;
+            top: 0%;
+            left: 0px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
